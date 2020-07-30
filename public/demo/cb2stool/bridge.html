@@ -1,0 +1,13 @@
+
+<!-- saved from url=(0048)https://z.vertebrae-axis.com/scripts/bridge.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link id="2605af965edfc5e8cc803009e30e4edf" rel="preconnect" crossorigin="" href="https://api.vertebrae-axis.com/">
+<link id="537d060ede96d71f41def5969db25a56" rel="preconnect" crossorigin="" href="https://z.vertebrae-axis.com/">
+<script>
+function uuidv4(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(b){var a=16*Math.random()|0;return("x"===b?a:a&3|8).toString(16)})}var twoYears=63115200,halfHour=1800,storage=window.localStorage,curTime=+Math.floor(Date.now()/1E3),lastActivity=storage.getItem("lastActivity")?storage.getItem("lastActivity"):curTime,timeDelta=curTime-lastActivity;timeDelta>twoYears&&storage.removeItem("userKey");timeDelta>halfHour&&storage.removeItem("sessionKey");
+var userKey=storage.getItem("userKey"),sessionKey=storage.getItem("sessionKey");userKey||(userKey=uuidv4(),storage.setItem("userKey",userKey));sessionKey||(sessionKey=uuidv4(),storage.setItem("sessionKey",sessionKey));storage.setItem("lastActivity",curTime);var output={vertebrae:{userKey:userKey,sessionKey:sessionKey,lastActivity:lastActivity}};top.window.postMessage(JSON.stringify(output),"*");
+</script>
+</head>
+<body>
+
+</body></html>

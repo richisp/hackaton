@@ -1,0 +1,1 @@
+"use strict";var Crate=Crate||{};Crate.Breadcrumbs=function(){function n(){var n=new CustomEvent("BreadcrumbsLoaded");document.dispatchEvent(n)}return{dispatchBreadcrumbsLoadedEvent:n}}();Crate.Breadcrumbs.dispatchBreadcrumbsLoadedEvent()

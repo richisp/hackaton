@@ -1,0 +1,53 @@
+.arsenal-3d {
+  position: relative;
+  width: 150px;
+  height: 45px;
+}
+
+.larger-vertbutton {
+  width: 150px;
+}
+
+div[class^="vp_"] {
+  visibility: hidden;
+  position: fixed;
+  pointer-events: none;
+  left: -9999px;
+}
+
+body.adaptive-layout .arsenal-3d {
+  left: 26px;
+  bottom: 146px;
+}
+
+body.responsive-layout .arsenal-3d {
+  bottom: 90px;
+  left: 18px;
+}
+
+.vertebraeplaceholder_family {
+  max-height: 50px;
+}
+
+body.adaptive-layout .vertebraeplaceholder_family iframe {
+  margin-top: 12px;
+}
+
+body.adaptive-layout .vertebraeplaceholder_family {
+  width: 108px;
+}
+
+body.adaptive-layout .vertebraeplaceholder_family.larger-vertbutton {
+  width: 150px;
+}
+
+body.responsive-layout .vertebraeplaceholder_family {
+  width: 100%;
+  margin-top: 10px;
+}
+
+body.responsive-layout .vertebraeplaceholder_family iframe {
+  width: 100% !important;
+  max-height: 50px !important;
+  height: auto !important;
+}

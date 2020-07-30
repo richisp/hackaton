@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+    #cts-tab {
+        top: 300px !important;
+    }
+    .inside_chatPane {
+        right: 50px !important;
+    }
+}
+
+#inside_holder {
+    z-index: 1000 !important;
+}
